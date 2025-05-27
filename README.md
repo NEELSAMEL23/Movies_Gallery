@@ -56,14 +56,14 @@ Movies_Gallery/
 ## 📦 How to Run Locally
 
 🚀 Getting Started
+
 1. Clone the Repository
-bash
-Copy
-Edit
 git clone https://github.com/neelsamel23/Movies_Gallery.git
 cd Movies_Gallery
-2. Run the Project Locally
+
+3. Run the Project Locally
 🖥️ If you're using VS Code:
+
 Open the folder in VS Code:
 
 code .
