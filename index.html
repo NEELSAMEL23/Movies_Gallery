@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+  <title>Book My Movie</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="spinnerContainer" id="spinnerContainer">
+      <div class="spinner"></div>
+    </div>
+    
+    <div class="w-100 mt-10 flex flex-col gap-3 justify-center items-center mx-auto">
+      <input type="searchBar" class="w-full border border-amber-200 rounded-2xl py-2 px-2 outline-amber-50"
+        id="searchInput" onkeyup="searchMovie()" placeholder="SearchMovie">
+      <div class="flex gap-2">
+        <button
+          class="bg-cyan-300 border px-5 font-semibold border-amber-200 py-2 rounded-2xl hover:bg-cyan-500 cursor-pointer "
+          onclick="sortMovie('rating')">Rating</button>
+        <button
+          class="bg-cyan-300 border px-5 font-semibold border-amber-200 py-2 rounded-2xl hover:bg-cyan-500 cursor-pointer "
+          onclick="sortMovie('release_date')">Release Date</button>
+        <button
+          class="bg-cyan-300 border px-5 font-semibold border-amber-200 py-2 rounded-2xl hover:bg-cyan-500 cursor-pointer "
+          onclick="sortMovie('genre')">Genre</button>
+      </div>
+    </div>
+
+    <div class="cards" id="cards"></div>
+
+    <div id="paginationContainer" class="text-center w-200 mx-auto flex justify-between px-2 py-2 mt-2 "></div>
+  </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
