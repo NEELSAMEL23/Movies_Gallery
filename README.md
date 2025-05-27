@@ -16,7 +16,7 @@ Movies_Gallery/
 ├── index.html # Main HTML file
 ├── input.css # Tailwind input styles
 ├── output.css # Compiled Tailwind CSS
-├── style.css # Custom styles (if any)
+├── style.css # Custom styles 
 ├── script.js # Main JavaScript logic
 ├── movies.json # Static movie data (used for local testing)
 ├── tailwind.config.js # Tailwind configuration
@@ -55,12 +55,22 @@ Movies_Gallery/
 
 ## 📦 How to Run Locally
 
-1. **Clone the Repository**
-
-```bash
+🚀 Getting Started
+1. Clone the Repository
+bash
+Copy
+Edit
 git clone https://github.com/neelsamel23/Movies_Gallery.git
 cd Movies_Gallery
+2. Run the Project Locally
+🖥️ If you're using VS Code:
+Open the folder in VS Code:
 
+code .
+Open index.html manually or via the Explorer.
+
+Press Alt + L followed by Alt + O
+(This opens the file with the Live Server extension — make sure it’s installed).
 
 📸 Project Preview
 
